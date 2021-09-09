@@ -11,16 +11,6 @@ ul, li, ol {
   margin: 0;
   text-decoration: none; }
 
-.visuallyhidden {
-  position: absolute;
-  margin: -1px;
-  height: 1px;
-  width: 1px;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  overflow: hidden; }
-
 body {
   height: 100%;
   min-height: 100vh;
@@ -33,15 +23,39 @@ main {
   /*para separar el header del footer*/
   padding: 3em 0; }
 
+.menu-md {
+  border: 2px solid #FFFFFF;
+  padding: 0.3em 2em; }
+
+header {
+  position: relative;
+  width: 100%; }
+
+nav {
+  transition: all .3s;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  nav .menu {
+    color: #FFFFFF;
+    font-size: 1.1em; }
+  nav .menu:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
+  nav .menu-link {
+    padding: 1em; }
+
 .hero {
   background: url("../img/microphone_1.jpg") no-repeat fixed center/cover;
-  height: 400px;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  color: #FFF; }
   .hero .logo-img {
-    background: url("../img/icon-lem.png") no-repeat center center;
-    height: 260px;
+    background: url("../img/icon-lem-md.png") no-repeat center center;
+    height: 220px;
     font-size: 50px; }
   .hero .hero::before {
     content: "";
@@ -52,28 +66,61 @@ main {
     width: 100%;
     max-width: 700px;
     text-align: center;
-    color: #FFF; }
+    color: #FFFFFF; }
   .hero .hero-titulo {
     line-height: 1.5;
-    font-size: 3em; }
+    font-size: 2em;
+    text-transform: uppercase; }
   .hero .hero-slogan {
     line-height: 2;
-    font-size: 1.2em; }
+    font-size: 1.1em; }
 
 @media only screen and (max-width: 576px) {
   body {
     background: red; }
+  .menu-md {
+    display: none; }
   .logo-img {
     display: none; } }
 
 @media only screen and (min-width: 577px) and (max-width: 1200px) {
   body {
     background: violet; }
+  .menu-sm {
+    display: none; }
+  .menu-md {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; }
+  .menu-link:hover {
+    transform: scale(1.1);
+    color: #ff9800; }
+  .menu-link:active {
+    transform: scale(1); }
+  .logo {
+    flex: 1 0 auto;
+    font-weight: 600;
+    letter-spacing: 2px; }
   .logo-img {
     display: block; } }
 
 @media only screen and (min-width: 1201px) {
   body {
     background: #CECECE; }
+  .menu-sm {
+    display: none; }
+  .menu-md {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline; }
+  .menu-link:hover {
+    transform: scale(1.1);
+    color: #ff9800; }
+  .menu-link:active {
+    transform: scale(1); }
+  .logo {
+    flex: 1 0 auto;
+    font-weight: 600;
+    letter-spacing: 2px; }
   .logo-img {
     display: block; } }

@@ -16,7 +16,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
 
 main {
   flex: 1;
@@ -24,7 +26,6 @@ main {
   padding: 3em 0; }
 
 .menu-md {
-  border: 2px solid #FFFFFF;
   padding: 0.3em 2em; }
 
 header {
@@ -32,18 +33,30 @@ header {
   width: 100%; }
 
 nav {
-  transition: all .3s;
   color: #FFFFFF;
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300; }
+  nav .logo {
+    font-family: "Caveat", cursive, sans-serif;
+    font-size: 1.5em;
+    color: #ca2d26; }
   nav .menu {
     color: #FFFFFF;
-    font-size: 1.1em; }
+    font-size: 1.1em;
+    transition: all 0.5s; }
   nav .menu:hover {
     background-color: rgba(0, 0, 0, 0.3); }
   nav .menu-link {
     padding: 1em; }
+  nav .menu-link:hover {
+    transform: scale(1.07); }
+  nav .menu-link:active {
+    transform: scale(1.2); }
+  nav .menu-link--active {
+    border: 1px solid #CECECE; }
 
 .hero {
   background: url("../img/microphone_1.jpg") no-repeat fixed center/cover;
@@ -69,8 +82,10 @@ nav {
     color: #FFFFFF; }
   .hero .hero-titulo {
     line-height: 1.5;
-    font-size: 2em;
-    text-transform: uppercase; }
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300; }
   .hero .hero-slogan {
     line-height: 2;
     font-size: 1.1em; }
@@ -92,11 +107,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: baseline; }
-  .menu-link:hover {
-    transform: scale(1.1);
-    color: #ff9800; }
-  .menu-link:active {
-    transform: scale(1); }
   .logo {
     flex: 1 0 auto;
     font-weight: 600;
@@ -113,11 +123,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: baseline; }
-  .menu-link:hover {
-    transform: scale(1.1);
-    color: #ff9800; }
-  .menu-link:active {
-    transform: scale(1); }
   .logo {
     flex: 1 0 auto;
     font-weight: 600;

@@ -20,6 +20,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+	font-family: $fontRoboto;
+	font-weight: $styleLight;
 }
 main{
   flex:1; /*para separar el header del footer*/
@@ -39,7 +41,6 @@ main{
 
 //HEADER NAV
 .menu-md{
-	border: 2px solid #FFFFFF;
 	padding: 0.3em 2em;
 }
 .menu-sd{
@@ -53,17 +54,25 @@ header{
 nav{
 	// display: flex;
 	// justify-content: center;
-	transition: all .3s;
+	
 	color:$color-txt-light;
 	position: absolute;
 	top: 0;
 	width: 100%;
+	font-family: $fontPoppins;
+	font-weight: $styleLight;
 	
 
+	.logo{
+		font-family: $fontCaveat;
+		font-size: 1.5em;
+		color: rgb(202,45,38);
+	}
 
 	.menu{
 		color:$color-txt-light;
 		font-size: 1.1em;
+		transition: all 0.5s;
 		
 	}
 	.menu:hover{
@@ -74,7 +83,17 @@ nav{
 		padding: 1em;
 	
 	}
+	.menu-link:hover {
+		transform: scale(1.07);
+	}
 	
+	.menu-link:active {
+		transform: scale(1.2);
+	}
+	.menu-link--active{
+		border: 1px solid #CECECE;
+	}
+		
 
 }
 
@@ -111,8 +130,10 @@ nav{
 	}
 	.hero-titulo{
 		line-height: 1.5;
-		font-size: 2em;
+		font-size: 2.8em;
 		text-transform: uppercase;
+		font-family:$fontOswald;
+		font-weight: $styleLight;
 	}
 	.hero-slogan{
 		line-height: 2;
@@ -153,14 +174,7 @@ nav{
 		justify-content: space-around;
 		align-items: baseline;
 	}
-	.menu-link:hover {
-		transform: scale(1.1);
-		color: #ff9800;
-	}
 	
-	.menu-link:active {
-		transform: scale(1);
-	}
 	.logo {
 		flex: 1 0 auto; 
 		font-weight: 600;
@@ -187,14 +201,7 @@ nav{
 		justify-content: space-around;
 		align-items: baseline;
 	}
-	.menu-link:hover {
-		transform: scale(1.1);
-		color: #ff9800;
-	}
 	
-	.menu-link:active {
-		transform: scale(1);
-	}
 	.logo {
 		flex: 1 0 auto; 
 		font-weight: 600;

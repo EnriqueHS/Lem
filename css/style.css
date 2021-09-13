@@ -33,7 +33,7 @@ header {
   width: 100%; }
 
 nav {
-  color: #FFFFFF;
+  color: #F9F9F9;
   position: absolute;
   top: 0;
   width: 100%;
@@ -41,10 +41,10 @@ nav {
   font-weight: 300; }
   nav .logo {
     font-family: "Caveat", cursive, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #ca2d26; }
   nav .menu {
-    color: #FFFFFF;
+    color: #F9F9F9;
     font-size: 1.1em;
     transition: all 0.5s; }
   nav .menu:hover {
@@ -56,7 +56,9 @@ nav {
   nav .menu-link:active {
     transform: scale(1.2); }
   nav .menu-link--active {
-    border: 1px solid #CECECE; }
+    border: 1px solid #CECECE;
+    border-radius: 50px;
+    padding: 0.4em 1em; }
 
 .hero {
   background: url("../img/microphone_1.jpg") no-repeat fixed center/cover;
@@ -79,7 +81,7 @@ nav {
     width: 100%;
     max-width: 700px;
     text-align: center;
-    color: #FFFFFF; }
+    color: #F9F9F9; }
   .hero .hero-titulo {
     line-height: 1.5;
     font-size: 2.8em;
@@ -88,7 +90,18 @@ nav {
     font-weight: 300; }
   .hero .hero-slogan {
     line-height: 2;
-    font-size: 1.1em; }
+    font-size: 1em;
+    font-style: italic; }
+  .hero .btn-inicio {
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    padding: 0.4em 1.5em;
+    font-size: 1.2em;
+    position: relative;
+    top: 30px; }
+  .hero .btn-inicio:hover {
+    background: red;
+    border: 1px solid red; }
 
 @media only screen and (max-width: 576px) {
   body {

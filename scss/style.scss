@@ -1,4 +1,6 @@
-@import "_variables";
+@import "variables",
+		"abstracts/mixins";
+
 
 //RESET
 * {
@@ -139,6 +141,10 @@ nav{
 		text-transform: uppercase;
 		font-family:$fontOswald;
 		font-weight: $styleLight;
+
+		@include responsive ('mobile-v'){
+			font-size:10vw ;
+		}
 	}
 	.hero-slogan{
 		line-height: 2;
@@ -163,72 +169,3 @@ nav{
 //FIN DE HERO
 
 
-
-
-
-
-//@MEDIA QUERIES
-@media only screen and (max-width:576px){
-	body{
-		background: red;
-	}
-	.menu-md{
-		display: none;
-	}
-	.logo-img{
-		display: none;
-	}
-	
-}
-
-@media only screen and (min-width:577px) and (max-width:1200px){
-	body{
-		background: violet;
-	}
-	.menu-sm{
-		display: none;
-	}
-	.menu-md{
-		display: flex;
-		justify-content: space-around;
-		align-items: baseline;
-	}
-	
-	.logo {
-		flex: 1 0 auto; 
-		font-weight: 600;
-		letter-spacing: 2px;
-	}
-	
-	.logo-img{
-		display: block;
-	}
-	
-}
-
-@media only screen and (min-width:1201px) {
-	body{
-		background:#CECECE;
-		
-	}
-	.menu-sm{
-		display: none;
-	}
-
-	.menu-md{
-		display: flex;
-		justify-content: space-around;
-		align-items: baseline;
-	}
-	
-	.logo {
-		flex: 1 0 auto; 
-		font-weight: 600;
-		letter-spacing: 2px;
-	}
-
-	.logo-img{
-		display: block;
-	}
-
-}

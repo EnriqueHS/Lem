@@ -141,6 +141,8 @@ nav .menu-link--active {
   font-size: 1.2em;
   position: relative;
   top: 30px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .hero .btn-inicio:hover {
   background: red;

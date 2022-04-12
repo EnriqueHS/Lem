@@ -89,7 +89,7 @@ nav{
 	}
 	
 	.menu-link:active {
-		transform: scale(1.2);
+		transform: scale(1.2);  
 		
 	}
 	.menu-link--active{
@@ -152,6 +152,7 @@ nav{
 		font-size: 1.2em;
 		position: relative;
 		top:30px;
+		transition: all 0.3s;
 	}
 	.btn-inicio:hover{
 		background: red;
